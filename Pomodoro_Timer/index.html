@@ -155,6 +155,7 @@
             animation: fadeIn 0.5s;
         }
     </style>
+
 </head>
 <body>
     <div class="container">
@@ -180,9 +181,11 @@
         let seconds = 0;
         let isRunning = false;
         let workSessions = 0;
-
+       /* récupère le bouton "Start/Pause".*/
         const startStopBtn = document.getElementById('startStopBtn');
+        /* récupère le bouton "Reset".*/
         const resetBtn = document.getElementById('resetBtn');
+        /* récupère l'affichage du minuteur (exemple : 25:00).*/
         const timerDisplay = document.getElementById('timerDisplay');
 
         startStopBtn.addEventListener('click', toggleTimer);
